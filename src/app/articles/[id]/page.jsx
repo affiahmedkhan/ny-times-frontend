@@ -81,35 +81,27 @@ const ArticleDetail = ({params}) => {
                     </Grid>
                 )}
                 <Grid item>
-                    <Typography variant="h2" sx={{textAlign: 'center'}}>
+                    <Typography variant="h3" sx={{textAlign: 'center', sm: {fontSize: '18px'}}}>
                         {article.title}
                     </Typography>
                 </Grid>
                 <Grid item alignSelf={'flex-start'} width={'100%'}>
-                    <Box
-                        sx={{
-                            display: 'flex',
-                            justifyContent: 'space-between',
-                            gap: 3,
-                            width: '100%',
-                        }}
-                    >
-                        <Box
-                            sx={{
-                                display: 'flex',
-                                gap: 3,
-                            }}
-                        >
+                    <Grid container spacing={1}>
+                        <Grid item>
                             <Chip label={article.byline} />
+                        </Grid>{' '}
+                        <Grid item>
                             <Chip label={new Date(article.published_date).toLocaleDateString()} />
-                        </Box>
-                        <Box>
+                        </Grid>
+                        <Grid item>
                             <Chip label={article.section} />
-                        </Box>
-                    </Box>
+                        </Grid>
+                    </Grid>
                 </Grid>
-                <Grid alignSelf={'flex-start'} item>
-                    <Typography sx={{textAlign: 'justify'}}>{article.abstract}</Typography>
+                <Grid alignSelf={'flex-start'} width={'100%'} item>
+                    <Typography component="p" sx={{textAlign: 'justify'}}>
+                        {article.abstract}
+                    </Typography>
                 </Grid>
             </Grid>
         </Container>
