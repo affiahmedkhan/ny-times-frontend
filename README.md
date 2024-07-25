@@ -4,10 +4,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 
-# Open Powershell or cmd in the same main directory.
+### Open Powershell or cmd in the same main directory.
 
-# first install all the dependencies, NOTE: NodeJs must be installed in your machine to run the following commands
-
+### first install all the dependencies,
+### NOTE: NodeJs must be installed in your machine to run the following commands
 ```bash
 
 
