@@ -71,11 +71,19 @@ const ArticleDetail = ({params}) => {
             <Grid container spacing={2} direction="column" alignItems="center">
                 {mediaUrl && (
                     <Grid item>
-                        <Image src={mediaUrl} alt={article.title} width={440} height="293" />
+                        <Image
+                            src={mediaUrl}
+                            alt={article.title}
+                            width={320}
+                            height={200}
+                            priority
+                        />
                     </Grid>
                 )}
                 <Grid item>
-                    <Typography variant="h2">{article.title}</Typography>
+                    <Typography variant="h2" sx={{textAlign: 'center'}}>
+                        {article.title}
+                    </Typography>
                 </Grid>
                 <Grid item alignSelf={'flex-start'} width={'100%'}>
                     <Box
@@ -101,7 +109,7 @@ const ArticleDetail = ({params}) => {
                     </Box>
                 </Grid>
                 <Grid alignSelf={'flex-start'} item>
-                    <p>{article.abstract}</p>
+                    <Typography sx={{textAlign: 'justify'}}>{article.abstract}</Typography>
                 </Grid>
             </Grid>
         </Container>
