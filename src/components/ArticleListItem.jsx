@@ -3,7 +3,6 @@
 import React from 'react';
 import Link from 'next/link';
 import {Card, CardContent, CardMedia, Chip, Grid, Typography} from '@mui/material';
-import Image from 'next/image';
 
 const ArticleListItem = ({article}) => {
     const mediaUrl =

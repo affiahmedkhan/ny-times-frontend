@@ -1,7 +1,7 @@
 'use client';
 
 import {AppBar, Toolbar, IconButton, Typography} from '@mui/material';
-import SwitchButton from './switchButton/Switch';
+import SwitchButton from './switch';
 
 const Navbar = () => {
     return (

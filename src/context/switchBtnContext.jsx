@@ -1,9 +1,9 @@
 'use client';
-import React, { createContext, useContext, useState } from 'react';
+import React, {createContext, useContext, useState} from 'react';
 
 const SwitchContext = createContext();
 
-export const SwitchProvider = ({ children }) => {
+export const SwitchProvider = ({children}) => {
     const [checked, setChecked] = useState(false);
 
     const handleChange = () => {
@@ -11,9 +11,7 @@ export const SwitchProvider = ({ children }) => {
     };
 
     return (
-        <SwitchContext.Provider value={{ checked, handleChange }}>
-            {children}
-        </SwitchContext.Provider>
+        <SwitchContext.Provider value={{checked, handleChange}}>{children}</SwitchContext.Provider>
     );
 };
 

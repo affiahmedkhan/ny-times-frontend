@@ -3,9 +3,9 @@
 import React, {useEffect, useState} from 'react';
 import {Container, Typography, Chip, Grid, Box} from '@mui/material';
 import Image from 'next/image';
-import nyLogo from '../../../assets/images/NewYorkTimes.svg';
-import nyLogoWhite from '../../../assets/images/NewYorkTimes-white.svg';
-import {useSwitch} from '@/context/switchContext';
+import nyLogo from '@/assets/images/NewYorkTimes.svg';
+import nyLogoWhite from '@/assets/images/NewYorkTimes-white.svg';
+import {useSwitch} from '@/context/switchBtnContext';
 
 const ArticleDetail = ({params}) => {
     const {id} = params;
@@ -23,7 +23,6 @@ const ArticleDetail = ({params}) => {
                 setError('Failed to fetch article');
             }
         };
-
         getArticle();
     }, [id]);
 

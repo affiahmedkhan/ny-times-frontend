@@ -2,7 +2,7 @@
 
 import React from 'react';
 import {Grid} from '@mui/material';
-import ArticleListItem from './ArticleListItem';
+import ArticleListItem from './articleListItem';
 
 const Articles = ({articlesList}) => {
     if (!articlesList || !articlesList.length) {

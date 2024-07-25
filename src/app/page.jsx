@@ -1,7 +1,7 @@
 'use client';
 
 import {useEffect, useState} from 'react';
-import {fetchArticles} from '../utils/api';
+import {fetchArticles} from '@/utils/api';
 import {
     Box,
     Container,
@@ -12,11 +12,11 @@ import {
     Select,
     Typography,
 } from '@mui/material';
-import Articles from '../components/Articles';
+import Articles from '@/components/articles';
 import Image from 'next/image';
-import nyLogo from '../assets/images/NewYorkTimes.svg';
-import nyLogoWhite from '../assets/images/NewYorkTimes-white.svg';
-import {useSwitch} from '../context/switchContext';
+import nyLogo from '@/assets/images/NewYorkTimes.svg';
+import nyLogoWhite from '@/assets/images/NewYorkTimes-white.svg';
+import {useSwitch} from '@/context/switchBtnContext';
 
 export default function Home() {
     const [articles, setArticles] = useState([]);
