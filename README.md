@@ -6,14 +6,14 @@ First, run the development server:
 
 ### Open Powershell or cmd in the same main directory.
 
-### first install all the dependencies,
+### First install all the dependencies,
 ### NOTE: NodeJs must be installed in your machine to run the following commands
 ```bash
 
 
 npm install
 
-# when installation is done, run the app
+# When installation is done, run the app
 
 npm run dev
 ```
