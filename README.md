@@ -11,7 +11,7 @@ First, run the development server:
 
 npm install
 
-# when install is done run the app
+# when installation is done, run the app
 
 npm run dev
 ```
