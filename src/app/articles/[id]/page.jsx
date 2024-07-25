@@ -54,11 +54,11 @@ const ArticleDetail = ({params}) => {
             : '';
 
     return (
-        <Container sx={{my: 15}}>
+        <Container sx={{my: 10}}>
             <Box
                 sx={{
                     textAlign: 'center',
-                    m: '35px',
+                    mb: '35px',
                 }}
             >
                 <Image
