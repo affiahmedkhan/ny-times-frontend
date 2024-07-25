@@ -42,17 +42,17 @@ export default function Home() {
     };
 
     return (
-        <Container>
+        <Container sx={{my: 10}}>
             <Box
                 sx={{
                     textAlign: 'center',
-                    m: '35px',
+                    mb: '35px',
                 }}
             >
                 <Image
                     src={checked ? nyLogoWhite : nyLogo}
                     alt="New York Times"
-                    height={50}
+                    width={300}
                     priority
                 />
             </Box>

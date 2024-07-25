@@ -45,8 +45,8 @@ const ArticleDetail = ({params}) => {
     }
 
     const mediaUrl =
-        article.media && article.media.length > 0
-            ? article.media
+        article?.media && article?.media.length > 0
+            ? article?.media
                   .find((m) =>
                       m['media-metadata'].some((meta) => meta.format === 'mediumThreeByTwo440'),
                   )
@@ -64,7 +64,7 @@ const ArticleDetail = ({params}) => {
                 <Image
                     src={checked ? nyLogoWhite : nyLogo}
                     alt="New York Times"
-                    height={50}
+                    width={300}
                     priority
                 />
             </Box>
