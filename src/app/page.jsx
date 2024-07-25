@@ -16,7 +16,7 @@ import Articles from '../components/Articles';
 import Image from 'next/image';
 import nyLogo from '../assets/images/NewYorkTimes.svg';
 import nyLogoWhite from '../assets/images/NewYorkTimes-white.svg';
-import {useSwitch} from '@/context/switchContext';
+import {useSwitch} from '../context/switchContext';
 
 export default function Home() {
     const [articles, setArticles] = useState([]);

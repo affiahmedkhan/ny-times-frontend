@@ -2,7 +2,6 @@
 
 import {AppBar, Toolbar, IconButton, Typography} from '@mui/material';
 import SwitchButton from './switchButton/Switch';
-import {useSwitch} from '@/context/switchContext';
 
 const Navbar = () => {
     return (

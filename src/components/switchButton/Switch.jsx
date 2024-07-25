@@ -6,7 +6,7 @@ import Switch from '@mui/material/Switch';
 import starsIcon from '../../assets/images/starsIcon.svg';
 import MoonIcon from '../../assets/images/MoonIcon.svg';
 import {keyframes} from '@mui/system';
-import {useSwitch} from '@/context/switchContext';
+import {useSwitch} from '../../context/switchContext';
 
 const thumbOpacity0to1 = keyframes`
   from { opacity: 1; }
