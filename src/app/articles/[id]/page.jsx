@@ -5,7 +5,7 @@ import {Container, Typography, Chip, Grid, Box} from '@mui/material';
 import Image from 'next/image';
 import nyLogo from '../../../assets/images/NewYorkTimes.svg';
 import nyLogoWhite from '../../../assets/images/NewYorkTimes-white.svg';
-import {useSwitch} from '../../../../context/switchContext';
+import {useSwitch} from '../../context/switchContext';
 
 const ArticleDetail = ({params}) => {
     const {id} = params;
