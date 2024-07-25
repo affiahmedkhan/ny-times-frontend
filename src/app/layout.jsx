@@ -2,9 +2,9 @@
 import '@/styles/globals.css';
 import {CssBaseline, ThemeProvider} from '@mui/material';
 import {useEffect, useMemo} from 'react';
-import Navbar from '@/components/navbar';
 import {SwitchProvider, useSwitch} from '@/context/switchBtnContext';
 import {lightTheme, darkTheme} from '@/styles/theme';
+import Navbar from '@/components/mainNavbar';
 
 function AppLayout({children}) {
     return (
