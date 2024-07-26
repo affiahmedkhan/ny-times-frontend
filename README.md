@@ -10,11 +10,22 @@ First, run the development server:
 ### NOTE: NodeJs must be installed in your machine to run the following commands
 ```bash
 
-
+# Install Dependencies
 npm install
 
-# When installation is done, run the app
+# Build Project
+npm build;
 
+# Run static code analysis using lint
+npm run lint; 
+
+# Run test
+npm test;
+
+# Run test coverage
+npm run test:coverage;
+
+# When installation is done, run the app
 npm run dev
 ```
 
