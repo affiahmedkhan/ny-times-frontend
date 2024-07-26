@@ -1,5 +1,5 @@
 'use client';
-
+import React from 'react';
 import {useEffect, useState} from 'react';
 import {fetchArticles} from '@/utils/api';
 import {
@@ -52,8 +52,8 @@ export default function Home() {
                 <Image
                     src={checked ? nyLogoWhite : nyLogo}
                     alt="New York Times"
+                    role="img"
                     width={300}
-                    priority
                 />
             </Box>
             <FormControl sx={{mb: 3}}>

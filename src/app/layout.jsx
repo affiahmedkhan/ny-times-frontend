@@ -5,6 +5,7 @@ import {useEffect, useMemo} from 'react';
 import {SwitchProvider, useSwitch} from '@/context/switchBtnContext';
 import {lightTheme, darkTheme} from '@/styles/theme';
 import Navbar from '@/components/mainNavbar';
+import React from 'react';
 
 function AppLayout({children}) {
     return (
@@ -28,7 +29,7 @@ export default function RootLayout({children}) {
     );
 }
 
-function ThemeWrapper({children}) {
+export function ThemeWrapper({children}) {
     const {checked} = useSwitch();
 
     const theme = useMemo(() => (checked ? lightTheme : darkTheme), [checked]);

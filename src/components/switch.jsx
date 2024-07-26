@@ -14,7 +14,7 @@ const thumbOpacity0to1 = keyframes`
 `;
 
 const SwitchBtn = styled((props) => (
-    <Switch className="dayNightSwitchBtn" disableRipple {...props} />
+    <Switch role="switch" className="dayNightSwitchBtn" disableRipple {...props} />
 ))(({theme}) => ({
     '--MuiSwitch-track-border-radius': '40.71px',
     width: 95,

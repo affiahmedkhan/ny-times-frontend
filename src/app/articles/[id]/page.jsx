@@ -65,7 +65,6 @@ const ArticleDetail = ({params}) => {
                     src={checked ? nyLogoWhite : nyLogo}
                     alt="New York Times"
                     width={300}
-                    priority
                 />
             </Box>
             <Grid container spacing={2} direction="column" alignItems="center">
@@ -76,7 +75,6 @@ const ArticleDetail = ({params}) => {
                             alt={article.title}
                             width={320}
                             height={200}
-                            priority
                         />
                     </Grid>
                 )}

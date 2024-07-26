@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import {Card, CardContent, CardMedia, Chip, Grid, Typography} from '@mui/material';
+import {Card, CardContent, CardMedia, Typography} from '@mui/material';
 
 const ArticleListItem = ({article}) => {
     const mediaUrl =
@@ -25,25 +25,29 @@ const ArticleListItem = ({article}) => {
                     height: '100%',
                 }}
             >
-                <CardMedia
-                    sx={{
-                        background: `url(${mediaUrl})`,
-                        height: 293,
-                        backgroundRepeat: 'no-repeat',
-                        backgroundPosition: 'center',
-                        backgroundSize: 'cover',
-                    }}
-                />
+                {mediaUrl && (
+                    <CardMedia
+                        component="img"
+                        image={mediaUrl}
+                        alt={article.title}
+                        sx={{
+                            height: 293,
+                            backgroundRepeat: 'no-repeat',
+                            backgroundPosition: 'center',
+                            backgroundSize: 'cover',
+                        }}
+                    />
+                )}
                 <CardContent>
                     <Typography variant="h5">{article.title}</Typography>
                     <Typography variant="subtitle1" color="textSecondary">
                         {article.byline}
                     </Typography>
                     <Typography variant="subtitle1" color="textSecondary">
-                        Published Date: {new Date(article.published_date).toLocaleDateString()}
+                        {new Date(article.published_date).toLocaleDateString()}
                     </Typography>
                     <Typography variant="subtitle1" color="textSecondary">
-                        Section: {article.section}
+                        {article.section}
                     </Typography>
                 </CardContent>
             </Card>
